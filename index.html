@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olimpo Soluciones Integrales fabrica mobiliario, domotica e iluminacion a la medida para negocios y hogares que exigen mas que lo ordinario. Cotiza tu proyecto.</title>
-  <meta name="description" content="Olimpo Soluciones Integrales fabrica mobiliario, domotica e iluminacion a la medida para negocios y hogares que exigen mas que lo ordinario. Cotiza tu proyecto.">
-  <meta name="keywords" content="mobiliario a medida, domotica, iluminacion visual, muebles personalizados, automatizacion del hogar, espacios comerciales, soluciones integrales, mobiliario para negocios, iluminacion arquitectonica, sistemas de produccion, muebles a medida Mexico">
-  <meta name="author" content="OLIMPO">
+  <title>Olimpo Soluciones Corporativas: mobiliario a medida, maquila CNC, automatizacion industrial y senalizacion en Queretaro. Cotiza tu proyecto.</title>
+  <meta name="description" content="Olimpo Soluciones Corporativas disena y fabrica mobiliario a medida, stands de exhibicion, maquila CNC, automatizacion industrial, domotica e iluminacion visual en Queretaro. Cotiza tu proyecto.">
+  <meta name="keywords" content="mobiliario a medida, maquila CNC, automatizacion industrial, domotica, iluminacion visual, stands de exhibicion, espacios comerciales, senalizacion luminosa, sistemas de produccion, paneles solares, Queretaro">
+  <meta name="author" content="OLIMPO Soluciones Corporativas">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#050506">
-  <meta property="og:title" content="Olimpo Soluciones Integrales fabrica mobiliario, domotica e iluminacion a la medida para negocios y hogares que exigen mas que lo ordinario. Cotiza tu proyecto.">
-  <meta property="og:description" content="Olimpo Soluciones Integrales fabrica mobiliario, domotica e iluminacion a la medida para negocios y hogares que exigen mas que lo ordinario. Cotiza tu proyecto.">
+  <meta property="og:title" content="Olimpo Soluciones Corporativas: mobiliario a medida, maquila CNC, automatizacion industrial y senalizacion en Queretaro.">
+  <meta property="og:description" content="Disenamos y fabricamos mobiliario a medida, stands de exhibicion, maquila CNC, automatizacion industrial, domotica e iluminacion visual para negocios y hogares.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
-  <meta property="og:image" content="logo.svg">
+  <meta property="og:image" content="img/logo-olimpo.png">
   <link rel="icon" type="image/png" href="logo.svg">
   <link rel="apple-touch-icon" href="logo.svg">
   <script>document.documentElement.classList.add("js","is-loading");</script>
@@ -419,8 +419,9 @@ body.is-ready .hero-eyebrow::after {
   position: relative;
   display: grid;
   place-items: center;
-  width: min(200px, 52vw);
-  height: min(200px, 52vw);
+  width: min(260px, 62vw);
+  height: auto;
+  aspect-ratio: 900 / 220;
   opacity: 0;
   animation: loaderMark 1.1s var(--ease-out) 0.15s forwards;
 }
@@ -539,20 +540,8 @@ body.is-ready .hero-eyebrow::after {
   padding: 8px 0;
 }
 
-.site-header.is-compact .brand-mark {
-  width: 38px;
-  height: 38px;
-  border-radius: 9px;
-}
-
-.site-header.is-compact .brand-name {
-  font-size: 1.1rem;
-}
-
-.site-header.is-compact .brand-tagline {
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-6px);
+.site-header.is-compact .brand-wordmark {
+  height: 26px;
 }
 
 .site-header.is-compact .nav-link {
@@ -604,59 +593,16 @@ body.is-ready .hero-eyebrow::after {
   min-width: 0;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
+.brand-wordmark {
   flex-shrink: 0;
-  width: clamp(42px, 2vw + 34px, 50px);
-  height: clamp(42px, 2vw + 34px, 50px);
-  border: 1px solid var(--line-2);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.03);
-  transition: width 0.6s var(--ease-out), height 0.6s var(--ease-out),
-    border-color 0.35s ease, background 0.35s ease, border-radius 0.6s var(--ease-out);
-}
-
-.brand:hover .brand-mark {
-  border-color: color-mix(in srgb, var(--red) 45%, transparent);
-  background: color-mix(in srgb, var(--red) 8%, transparent);
-}
-
-.brand-logo {
-  width: 74%;
-  height: 74%;
+  height: 34px;
+  width: auto;
   object-fit: contain;
+  transition: height 0.6s var(--ease-out), opacity 0.3s ease;
 }
 
-.brand-text {
-  display: grid;
-  gap: 3px;
-  line-height: 1.05;
-  min-width: 0;
-}
-
-.brand-name {
-  font-family: var(--hw-display);
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: font-size 0.6s var(--ease-out);
-}
-
-.brand-tagline {
-  color: var(--muted);
-  max-height: 20px;
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: max-height 0.55s var(--ease-out), opacity 0.35s ease, transform 0.55s var(--ease-out);
+.brand:hover .brand-wordmark {
+  opacity: 0.85;
 }
 
 .main-nav {
@@ -2686,13 +2632,8 @@ main section[id] {
     padding: 12px 0;
   }
 
-  .brand-name {
-    font-size: 1.18rem;
-  }
-
-  .brand-tagline {
-    font-size: 0.52rem;
-    letter-spacing: 0.2em;
+  .brand-wordmark {
+    height: 28px;
   }
 
   .hero {
@@ -2897,13 +2838,8 @@ main section[id] {
   }
 
   .loader-mark {
-    width: 100px;
-    height: 100px;
-  }
-
-  .loader-logo {
-    width: 54px;
-    height: 54px;
+    width: 170px;
+    height: auto;
   }
 }
 
@@ -3157,7 +3093,7 @@ main section[id] {
     <div class="loader-texture" aria-hidden="true"></div>
     <div class="loader-inner">
       <div class="loader-mark">
-        <img src="logo.svg" alt="" class="loader-logo">
+        <img src="img/logo-olimpo.png" alt="" class="loader-logo">
       </div>
       <div class="loader-rings" aria-hidden="true">
         <span></span><span></span><span></span>
@@ -3172,12 +3108,8 @@ main section[id] {
   
 <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="#inicio" class="brand" aria-label="OLIMPO">
-        <span class="brand-mark"><img src="logo.svg" alt="OLIMPO" class="brand-logo"></span>
-        <span class="brand-text">
-          <span class="brand-name">OLIMPO</span>
-          <span class="brand-tagline">Mobiliario, domotica e iluminacion a tu medida</span>
-        </span>
+      <a href="#inicio" class="brand" aria-label="OLIMPO Soluciones Corporativas">
+        <img src="img/logo-olimpo.png" alt="OLIMPO Soluciones Corporativas" class="brand-wordmark">
       </a>
       <nav class="main-nav" id="main-nav">
         <ul>
@@ -3204,16 +3136,16 @@ main section[id] {
       <canvas id="particles-canvas" aria-hidden="true"></canvas>
       <div class="hero-rules" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
       <div class="container hero-inner">
-        <p class="eyebrow hero-eyebrow" data-hero="1">Soluciones integrales para negocios y hogares</p>
+        <p class="eyebrow hero-eyebrow" data-hero="1">Soluciones integrales en mobiliario, domotica y automatizacion industrial</p>
         <h1 class="hero-title">
-          <span class="line" data-hero="2"><span class="line-inner gradient-text">Espacios que trabajan</span></span>
-          <span class="line" data-hero="3"><span class="line-inner">para ti, no al reves</span></span>
+          <span class="line" data-hero="2"><span class="line-inner gradient-text">Tu marca, tu espacio,</span></span>
+          <span class="line" data-hero="3"><span class="line-inner">tu vision</span></span>
         </h1>
         <p class="hero-typewriter" data-hero="4">
           <span class="hero-typewriter-label">Lo hemos hecho para:</span>
           <span class="typewriter-word" id="typewriter"></span><span class="typewriter-cursor" aria-hidden="true"></span>
         </p>
-        <p class="hero-desc" data-hero="5">Fabricamos mobiliario, domotica e iluminacion disenados desde cero para tu espacio. Si lo estandar no te alcanza, nosotros lo construimos como lo necesitas.</p>
+        <p class="hero-desc" data-hero="5">En Olimpo disenamos y fabricamos soluciones a la medida para negocios y hogares que buscan algo mas que lo comun. Transformamos ideas en resultados reales: espacios que impresionan, sistemas inteligentes que facilitan tu vida y tecnologia que impulsa tu negocio.</p>
         <div class="hero-cta" data-hero="6">
           <button type="button" class="btn btn-primary btn-lg" data-wa-trigger>
             <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
@@ -3227,24 +3159,11 @@ main section[id] {
         <div class="hero-meta" data-hero="7">
           <div class="hero-meta-item">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
-            <span></span>
+            <span>Queretaro, Mexico</span>
           </div>
           <div class="hero-meta-item">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.9-13H11v6l5.2 3.1.9-1.5-4.2-2.5Z"/></svg>
-            <span>Lunes a sabado, 9:00 a 19:00</span>
-          </div>
-          <div class="hero-meta-item hero-meta-item--social">
-            <span class="hero-social-label">Siguenos aqui</span>
-            <div class="social-links">
-              <a href="https://wa.me/5215643451424" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                <span class="social-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg></span>
-                <span class="social-link-name">Instagram</span>
-              </a>
-              <a href="https://wa.me/5215643451424" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
-                <span class="social-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></span>
-                <span class="social-link-name">Facebook</span>
-              </a>
-            </div>
+            <span>Lunes a viernes 9:00 a 18:00, sabados 9:00 a 14:00</span>
           </div>
         </div>
       </div>
@@ -3262,69 +3181,72 @@ main section[id] {
         <div class="service-rows">
           <article class="service-row">
             <div class="service-media" data-reveal="media">
-              <img src="img/2.jpg" alt="Muebles y sistemas para negocios y hogares" loading="lazy">
+              <img src="img/2.jpg" alt="Espacios comerciales fabricados a medida por Olimpo" loading="lazy">
             </div>
             <div class="service-body" data-reveal-group>
               <div class="service-body-head" data-reveal>
                 <span class="service-index" aria-hidden="true">01</span>
-                <span class="tag">Mobiliario a medida</span>
+                <span class="tag">Espacios comerciales</span>
               </div>
-              <h3 class="service-title" data-reveal>Muebles y sistemas para negocios y hogares</h3>
-              <p class="service-desc" data-reveal>Diseñamos y fabricamos mobiliario funcional adaptado a las dimensiones, materiales y uso real de cada espacio. Para comercios, oficinas, restaurantes o residencias que requieren piezas únicas.</p>
+              <h3 class="service-title" data-reveal>Transforma tu espacio con piezas diseñadas para destacar</h3>
+              <p class="service-desc" data-reveal>Fabricamos muebles a medida, exhibidores y stands para negocio y hogar. Diseño profesional, materiales de alta calidad y fabricación impecable en cada proyecto.</p>
               <ul class="service-list">
-                <li data-reveal>Diseño ajustado a planos y medidas del cliente</li>
-                <li data-reveal>Fabricación para uso comercial o residencial</li>
-                <li data-reveal>Materiales seleccionados según carga de uso</li>
-                <li data-reveal>Integración con sistemas eléctricos o de iluminación</li>
-                <li data-reveal>Entrega e instalación incluidas en el proyecto</li>
+                <li data-reveal>Muebles para comercios, marketing y hogar</li>
+                <li data-reveal>Stands para exposición</li>
+                <li data-reveal>Ambientaciones para eventos</li>
+                <li data-reveal>Recintos tematizados</li>
+                <li data-reveal>Renderizado de proyectos</li>
+                <li data-reveal>Distintivos corporativos</li>
               </ul>
             </div>
           </article>
 
           <article class="service-row service-row--reverse">
             <div class="service-media" data-reveal="media">
-              <img src="img/3.jpg" alt="Automatización e integración de espacios" loading="lazy">
+              <img src="img/3.jpg" alt="Maquila CNC y automatizacion industrial en Olimpo" loading="lazy">
             </div>
             <div class="service-body" data-reveal-group>
               <div class="service-body-head" data-reveal>
                 <span class="service-index" aria-hidden="true">02</span>
-                <span class="tag">Domótica</span>
+                <span class="tag">Sistemas de produccion</span>
               </div>
-              <h3 class="service-title" data-reveal>Automatización e integración de espacios</h3>
-              <p class="service-desc" data-reveal>Instalamos sistemas de control inteligente para iluminación, accesos, climatización y seguridad. Soluciones escalables para negocios y hogares que buscan eficiencia y control real.</p>
+              <h3 class="service-title" data-reveal>Soluciones inteligentes que trabajan por ti</h3>
+              <p class="service-desc" data-reveal>Desarrollamos maquinaria CNC, sistemas automatizados, electrónica aplicada, sensores, cámaras de video, portones y domótica. Tecnología diseñada para optimizar procesos, aumentar productividad y facilitar tu vida.</p>
               <ul class="service-list">
-                <li data-reveal>Control centralizado desde dispositivo móvil</li>
-                <li data-reveal>Compatible con sistemas de iluminación a medida</li>
-                <li data-reveal>Programación de escenas y horarios automáticos</li>
-                <li data-reveal>Instalación coordinada con obra o remodelación</li>
-                <li data-reveal>Soporte técnico posterior a la entrega</li>
+                <li data-reveal>Maquila CNC profesional</li>
+                <li data-reveal>Automatización industrial</li>
+                <li data-reveal>Domótica y control inteligente</li>
+                <li data-reveal>Líneas de producción</li>
+                <li data-reveal>Diagnóstico, mantenimiento y reparación</li>
+                <li data-reveal>Paneles solares</li>
               </ul>
             </div>
           </article>
 
           <article class="service-row">
             <div class="service-media" data-reveal="media">
-              <img src="img/4.jpg" alt="Diseño y autonomía de iluminación" loading="lazy">
+              <img src="img/4.jpg" alt="Iluminacion y senalizacion visual de Olimpo" loading="lazy">
             </div>
             <div class="service-body" data-reveal-group>
               <div class="service-body-head" data-reveal>
                 <span class="service-index" aria-hidden="true">03</span>
                 <span class="tag">Iluminación visual</span>
               </div>
-              <h3 class="service-title" data-reveal>Diseño y autonomía de iluminación</h3>
-              <p class="service-desc" data-reveal>Proyectamos sistemas de iluminación que responden a la identidad y función de cada espacio. Desde iluminación arquitectónica hasta soluciones con autonomía energética para negocios con operación continua.</p>
+              <h3 class="service-title" data-reveal>Tu marca se ve, se siente y se recuerda</h3>
+              <p class="service-desc" data-reveal>Anuncios luminosos, letras iluminadas, neón flex, paneles LED e integración de pantallas: soluciones visuales que atraen miradas y elevan la presencia de tu negocio con elegancia y modernidad.</p>
               <ul class="service-list">
-                <li data-reveal>Proyecto de iluminación según uso del espacio</li>
-                <li data-reveal>Opciones con respaldo y autonomía energética</li>
-                <li data-reveal>Integrable con sistemas domóticos instalados</li>
-                <li data-reveal>Apto para espacios comerciales de operación 24/7</li>
+                <li data-reveal>Anuncios luminosos 3D y neón LED</li>
+                <li data-reveal>Volumétricos y pantallas gigantes LED</li>
+                <li data-reveal>Impresión y corte de vinil</li>
+                <li data-reveal>Pérgolas retráctiles</li>
+                <li data-reveal>Equipo de retail</li>
               </ul>
             </div>
           </article>
         </div>
 
         <div class="services-cta" data-reveal>
-          <p>Si tu espacio necesita más que un mueble de catálogo o una instalación estándar, en Olimpo lo diseñamos desde cero para que funcione exactamente como lo necesitas.</p>
+          <p>¿Listo para llevar tu proyecto al siguiente nivel? En Olimpo lo diseñamos y fabricamos desde cero para que funcione exactamente como lo necesitas.</p>
           <button type="button" class="btn btn-primary" data-wa-trigger><span>Habla con un asesor</span></button>
         </div>
       </div>
@@ -3334,7 +3256,7 @@ main section[id] {
       <div class="parallax-overlay" aria-hidden="true"></div>
       <div class="container parallax-content">
         <p class="eyebrow" data-reveal>Lo que hacemos</p>
-        <h2 data-reveal>Espacios que trabajan tan duro como tu negocio.</h2>
+        <h2 data-reveal>Creamos espacios, sistemas e identidad visual que hacen que tu marca se note, funcione y se recuerde.</h2>
       </div>
     </section>
 <section class="why-us has-bg">
@@ -3435,7 +3357,7 @@ main section[id] {
             <p class="eyebrow" data-reveal>Proyectos realizados</p>
             <h2 class="section-title" data-reveal>Lo que hacemos <span class="text-gold">habla solo</span></h2>
           </div>
-          <p class="section-desc" data-reveal>Cada proyecto es una solución diseñada desde cero para el espacio, el uso y las exigencias del cliente. Mobiliario, domótica e iluminación integrados con precisión.</p>
+          <p class="section-desc" data-reveal>Cada proyecto es una solución diseñada desde cero para el espacio, el uso y las exigencias del cliente. Mobiliario, stands de exhibición, automatización e iluminación integrados con precisión.</p>
         </div>
         <div class="gallery-grid" data-reveal-group>
           <figure class="gallery-item" data-reveal="media">
@@ -3474,6 +3396,30 @@ main section[id] {
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
             </button>
           </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <img src="img/17.jpg" alt="Stand de exhibición corporativo con pantalla LED integrada en feria comercial" loading="lazy">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="6" aria-label="Ampliar imagen: Stand de exhibición corporativo con pantalla LED integrada en feria comercial">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <img src="img/18.jpg" alt="Estructura metálica de stand de exhibición en proceso de instalación" loading="lazy">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="7" aria-label="Ampliar imagen: Estructura metálica de stand de exhibición en proceso de instalación">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <img src="img/19.jpg" alt="Recepciones a medida y segundo nivel de stand corporativo en feria" loading="lazy">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="8" aria-label="Ampliar imagen: Recepciones a medida y segundo nivel de stand corporativo en feria">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
+            </button>
+          </figure>
+          <figure class="gallery-item" data-reveal="media">
+            <img src="img/20.jpg" alt="Pista de baile con piso LED interactivo para producción de evento" loading="lazy">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="9" aria-label="Ampliar imagen: Pista de baile con piso LED interactivo para producción de evento">
+              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
+            </button>
+          </figure>
         </div>
 
         <div class="gallery-cta" data-reveal>
@@ -3497,12 +3443,25 @@ main section[id] {
           <h2 class="section-title" data-reveal>Agenda una <span class="text-gold">consulta directa</span></h2>
           <p class="section-desc" data-reveal>Cuéntanos qué necesitas y te decimos cómo lo resolvemos. Sin rodeos, sin catálogos genéricos. Solo soluciones diseñadas para tu espacio y tus objetivos.</p>
           <ul class="contact-list" data-reveal-group>
-            
+            <li data-reveal>
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
+              <span class="contact-text">
+                <span class="contact-label">Ubicacion</span>
+                <span>Queretaro, Mexico &middot; C.P. 76246</span>
+              </span>
+            </li>
             <li data-reveal>
               <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.7.1.4 0 .8-.2 1L6.6 10.8Z"/></svg></span>
               <span class="contact-text">
                 <span class="contact-label">WhatsApp</span>
-                <a href="https://wa.me/5215643451424" target="_blank" rel="noopener">564 345 1424</a>
+                <a href="https://wa.me/5215610558112" target="_blank" rel="noopener">561 055 8112</a>
+              </span>
+            </li>
+            <li data-reveal>
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm15.4 2H4.6L12 12.2Zm-16.4.9V18h16V6.9l-7.5 6.4a1 1 0 0 1-1.3 0Z"/></svg></span>
+              <span class="contact-text">
+                <span class="contact-label">Correo</span>
+                <a href="mailto:olimpo.cnc@outlook.com">olimpo.cnc@outlook.com</a>
               </span>
             </li>
             <li data-reveal>
@@ -3515,17 +3474,9 @@ main section[id] {
           </ul>
           <div class="contact-actions" data-reveal>
             <button type="button" class="btn btn-primary" data-wa-trigger><span>Solicitar proyecto</span></button>
-            <div class="social-links social-links--inline">
-              <a href="https://wa.me/5215643451424" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                <span class="social-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg></span>
-              </a>
-              <a href="https://wa.me/5215643451424" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
-                <span class="social-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></span>
-              </a>
-            </div>
           </div>
         </div>
-        
+
       </div>
     </section>
 
@@ -3536,10 +3487,9 @@ main section[id] {
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#inicio" class="brand">
-          <span class="brand-mark"><img src="logo.svg" alt="OLIMPO" class="brand-logo"></span>
-          <span class="brand-text"><span class="brand-name">OLIMPO</span><span class="brand-tagline">Mobiliario, domotica e iluminacion a tu medida</span></span>
+          <img src="img/logo-olimpo.png" alt="OLIMPO Soluciones Corporativas" class="brand-wordmark">
         </a>
-        <p>Olimpo Soluciones Integrales fabrica mobiliario, domótica e iluminación a medida para negocios y hogares que exigen resultados fuera de lo ordinario.</p>
+        <p>Olimpo Soluciones Corporativas disena y fabrica mobiliario a medida, stands de exhibicion, maquila CNC, automatizacion industrial, domotica e iluminacion visual para negocios y hogares que exigen resultados fuera de lo ordinario.</p>
       </div>
       <div class="footer-col">
         <h4>Navegacion</h4>
@@ -3553,16 +3503,17 @@ main section[id] {
       <div class="footer-col">
         <h4>Contacto</h4>
         <ul>
-          <li><br></li>
-          <li><a href="https://wa.me/5215643451424" target="_blank" rel="noopener">564 345 1424</a></li>
+          <li>Queretaro, Mexico &middot; C.P. 76246</li>
+          <li><a href="https://wa.me/5215610558112" target="_blank" rel="noopener">561 055 8112</a></li>
+          <li><a href="mailto:olimpo.cnc@outlook.com">olimpo.cnc@outlook.com</a></li>
           <li>Lunes a viernes 9:00 a 18:00, sabados 9:00 a 14:00</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <p>&copy; <span id="year"></span> OLIMPO. Todos los derechos reservados.</p>
-        <p class="footer-bottom-tag">Mobiliario, domotica e iluminacion a tu medida</p>
+        <p>&copy; <span id="year"></span> OLIMPO Soluciones Corporativas. Todos los derechos reservados.</p>
+        <p class="footer-bottom-tag">Mobiliario a medida, maquila CNC y automatizacion industrial</p>
       </div>
     </div>
   </footer>
@@ -3581,14 +3532,14 @@ main section[id] {
       <h3 id="wa-modal-title">Dinos como podemos ayudarte hoy</h3>
       <p class="wa-modal-desc">Elige el motivo de tu mensaje y te respondemos directo. Sin formularios, sin esperas innecesarias. Tu proyecto merece atención real.</p>
       <div class="wa-modal-options">
-        <a href="https://wa.me/5215643451424?text=Hola%2C%20quiero%20informacion" target="_blank" rel="noopener" class="wa-modal-option">
+        <a href="https://wa.me/5215610558112?text=Hola%2C%20quiero%20informacion" target="_blank" rel="noopener" class="wa-modal-option">
           <span class="wa-modal-option-body">
             <span class="wa-modal-option-title">Quiero cotizar o agendar</span>
             <span class="wa-modal-option-desc">Cuéntanos tu proyecto y te damos una propuesta a medida sin compromiso</span>
           </span>
           <svg viewBox="0 0 24 24" class="wa-modal-option-arrow" aria-hidden="true"><path fill="currentColor" d="m13.5 5-1.4 1.4 4.6 4.6H4v2h12.7l-4.6 4.6L13.5 19l7-7Z"/></svg>
         </a>
-        <a href="https://wa.me/5215643451424?text=Hola%2C%20quiero%20informacion" target="_blank" rel="noopener" class="wa-modal-option">
+        <a href="https://wa.me/5215610558112?text=Hola%2C%20quiero%20informacion" target="_blank" rel="noopener" class="wa-modal-option">
           <span class="wa-modal-option-body">
             <span class="wa-modal-option-title">Tengo una duda tecnica</span>
             <span class="wa-modal-option-desc">Pregunta sobre materiales, sistemas o procesos y te explicamos con claridad</span>
